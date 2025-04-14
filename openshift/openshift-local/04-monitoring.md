@@ -1,8 +1,10 @@
 # Monitoring - WIP
 
-```bash
-oc apply -f FIXME_PATH_TO_CONFIG
-```
+## OCP Observability
+
+OpenShift has a [built-in observability stack](https://docs.redhat.com/en/documentation/openshift_container_platform/4.10/html/monitoring/monitoring-overview).
+ You can use the example ConfigMaps below to configure specific aspects of
+ the operator's workloads.
 
 ```yaml
 # cluster-monitoring-config.yaml
@@ -44,3 +46,8 @@ data:
           # default 2Gi
           memory: FIXME_MEMORY_GI
 ```
+
+## Grafana Alloy
+
+See [skpaz/grafana/alloy/openshift](https://github.com/skpaz/grafana/tree/main/alloy/openshift)
+ to add Grafana Alloy to an OpenShift stack.
